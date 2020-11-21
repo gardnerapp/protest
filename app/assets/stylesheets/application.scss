@@ -1,0 +1,63 @@
+@import "bootstrap";
+@import "rebel";
+
+@mixin HeaderText{
+  .header{
+    margin: .5em;
+  }
+  p{
+    margin: .5em;
+    padding: .5em;
+    font-size: 30px;
+  }
+}
+
+.main{
+  padding: .75em;
+  text-align: center;
+}
+
+.text-section{
+  @include HeaderText
+}
+
+.main-counter{
+  @include HeaderText;
+
+
+}
+
+.corona{
+  color: red;
+}
+.positive{
+  color: deepskyblue;
+}
+
+.quote{
+  font-size: 25px;
+  margin: .5em;
+  padding: .5em;
+}
+
+.citation{
+  text-emphasis: #2E2F30;
+  font-size: 15px;
+  margin: .5em;
+  padding: .5em;
+}
+
+.header-small{
+  font-size: 35px;
+  margin: .5em;
+}
+
+.btn{
+  font-size: 25px;
+}
+
+
+span{
+  p{font-size: 30px;}
+  h1{font-size: 32px;}
+}

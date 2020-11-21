@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="col-md-8 offset-2 main">
+    <div class="text-section">
+    <h1 class="header">
+      Join <%= pluralize(@count, "other person", plural: "others")%> in ending
+      <span class="corona">Raimundo's Quarantine</span> !
+    </h1>
+
+      <h1 class="header">
+        A protest will take place at the State House on
+        <span class="positive">Saturday, November 28th, 2020  @
+          Noon !</span></h1>
+
+    <p> Providing your name and email to this digital petition shows your support for ending
+   Rhode Islands stay at home orders, curfew, and business closings.
+    </p>
+    <p> All information will be kept completely Anonymous.</p>
+
+    <%= form_for @rebel, url: rebel_index_path, html: {method: :post } do |f| %>
+      <p>
+        <%= f.label :name %>
+      <%=f.text_field :name, class: 'form-control'%>
+      </p>
+
+        <p>
+      <%= f.label :email %>
+      <%= f.email_field :email , class: 'form-control'%>
+        </p>
+      <%= f.submit "Take Action", class: "btn btn-primary" %>
+
+    <% end %>
+  </div>
+  </div>
+
+</div>

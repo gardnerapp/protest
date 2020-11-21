@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+no_name:
+  name: <%= '' %>
+  email: hog@hogmail.com
+
+no_email:
+  name: Cooper Gardner
+  email: <%= '' %>
+
+perfect:
+  name: Cooper Gardner
+  email: hog@hogmai.com

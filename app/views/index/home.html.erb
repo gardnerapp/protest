@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-2 main">
+      <div class="text-section">
+        <h1 class="header">Hi ! My name is Corey Gardner and I am advocating for evidence based policy.</h1>
+        <p>
+          I started this web site to inform people of the <em><b>facts</b></em> regarding the
+          dangers of the <span class="corona">Corona Virus</span> and the <em><b>ineffectiveness</b></em> of quarantine.
+        </p>
+        <p>
+          After you take a look at the data I've collected feel free to sign my petition for <b>ending</b> the
+          <em><b>involuntary</b></em> quarantine.
+        </p>
+        <h1 class="header">
+          Feel Free to Join us at the State House on
+          <span class="positive">Saturday, November 28th, 2020</span> at  <span class="positive">
+          Noon</span> to Protest !</h1>
+
+        <h1>  <span class="positive"> <%= pluralize(@count, "person has", plural: "people have",) %> </span>already
+          signed a petition to end
+          <b><span style="color: red">Raimundo's Lockdown</span> </b></h1>
+        <p><%= link_to "The Facts", facts_path, class: "btn btn-lg btn-block btn-primary " %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
