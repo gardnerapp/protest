@@ -24,4 +24,7 @@ class IndexController < ApplicationController
   def error
   end
 
+  def rights
+  end
+
 end
